@@ -1,0 +1,126 @@
+header {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+a#back-to-the-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 0.5px solid var(--green);
+
+    position: fixed;
+    top: 4vh;
+    right: 4vw;
+
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+img#profile-picture {
+    width: 35vw;
+    height: 35vw;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: solid 4px var(--green);
+}
+
+header {
+    width: 100%;
+}
+
+aside#menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    color: var(--dark-grey);
+    /* box-sizing: content-box; */
+}
+
+aside#menu h1 {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+div#name-container {
+    position: relative;
+    width: 100%;
+}
+
+div#shadow {
+    z-index: -1;
+    background-color: var(--green);
+
+    width: 92vw;
+    height: 30px;
+
+    position: absolute;
+    top: 35px;
+}
+
+h1 {
+    font-family: var(--title-font);
+}
+
+img.icons {
+    height: 12px;
+    color: var(--dark-grey);
+}
+
+ul#links {
+    padding: 0;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+}
+
+ul#links li {
+    width: 48%;
+    display: flex;
+    margin: 0 1% 0 1%;
+}
+
+ul#links li:nth-child(even) {
+    justify-content: flex-end;
+}
+
+ul#links li a{
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: var(--grey);
+}
+
+ul#links li a:hover {
+    margin-bottom: 4px;
+    border-bottom: 4px solid var(--grey);
+}
+
+p#about-me {
+    text-align: justify;
+}
+
+footer {
+    background-color: var(--green);
+    width: 100vw;
+}
+
+span#additional-info {
+    display: none;
+}
