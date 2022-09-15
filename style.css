@@ -23,6 +23,7 @@ html {
 body {
     color: var(--black);
     font-family: var(--text-font);
+    font-size: 12px;
 
     display: flex;
     flex-direction: column;
