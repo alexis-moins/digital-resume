@@ -70,6 +70,7 @@ div#vertical-line {
     z-index: -1;
     position: absolute;
 
+    top: 50px;
     left: 50%;
     margin-left: -10px;
 
@@ -77,4 +78,15 @@ div#vertical-line {
     background-color: var(--green);
 }
 
+div.article-container {
+    flex-direction: column;
+}
 
+div.article-container article {
+    width: 80%;
+}
+
+section > h1:nth-of-type(odd) {
+  width: 100%;
+  max-height: 155px;
+}

@@ -1,0 +1,85 @@
+header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 75%;
+
+    padding-top: 50px;
+}
+
+button#page-top {
+    display: none;
+}
+
+img#profile-picture {
+    width: 15vw;
+    height: 15vw;
+
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#name-container h1 {
+    margin: auto;
+    padding-left: 5px;
+}
+
+div#shadow {
+    top: 10px;
+    width: 142px;
+    height: 15px;
+}
+
+ul#links {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    margin: 0 20px 0 0;
+    padding: 10px 0 20px 6px;
+
+    width: 100vw;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    z-index: 3;
+    background-color: white;
+    border-bottom: solid 1px lightgrey;
+}
+
+ul#links li {
+    margin: 0 30px 0 30px;
+}
+
+ul#links li a {
+    border-bottom: solid 4px var(--green);
+}
+
+div#vertical-line {
+    display: none;
+}
+
+div.article-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+div.article-container > article {
+    width: 30%;
+    height: 225px;
+}
+
+main > h1 {
+    text-align: center;
+}
+
+section#projects {
+  background-color: var(--green);
+  width: 100vw;
+  height: 100vh;
+}

@@ -1,5 +1,6 @@
 @import "mobile.css" screen and (max-width: 630px);
 @import "tablet.css" screen and (min-width: 631px) and (max-width: 1024px);
+@import "desktop.css" screen and (min-width: 1025px);
 
 /* {{{ fonts and variables */
 
@@ -10,6 +11,7 @@
     --dark-grey: #545454;
     --grey: #737373;
     --green: #d3eee1;
+    --blue: cornflowerblue;
 
     --title-font: "Raleway", sans-serif;
     --text-font: "Lora", serif;
@@ -63,11 +65,17 @@ section {
     justify-content: space-evenly;
 }
 
-section > article {
+div.article-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div.article-container article {
     padding: 5%;
     position: relative;
 
-    width: 80%;
     max-width: 525px;
     margin: 4vh 0 4vh 0;
 
@@ -93,7 +101,7 @@ footer {
 
 /* {{{ custom elements */
 
-p#about-me {
+p {
     text-align: justify;
 }
 
@@ -168,24 +176,18 @@ div.source-code {
     right: 5px;
 
     border-radius: 6px;
-    /* box-shadow:  */
-    border: 2px solid cornflowerblue;
+    border: 2px solid var(--blue);
     padding: 2px 4px 2px 4px;
     margin-right: 5px;
 }
 
 div.source-code a {
     text-decoration: none;
-    color: cornflowerblue;
+    color: var(--blue);
+}
+
+section#skills article {
+    max-width: 310px;
 }
 
 /* }}} */
-
-@media screen and (min-width: 1025px) {
-    #additional-info {
-        display: block;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-}
