@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 
         <title>Alexis Moins - CS student </title>
     </head>
-    <body id="top-of-the-page">
+    <body>
         <header>
-        <a id="back-to-the-top" href="#top-of-the-page">&#127968</a>
+
+            <button id="page-top"><a href="#top">&#127968</a></button>
 
             <img
                 id="profile-picture"
@@ -27,21 +28,23 @@
                 <ul id="links">
                     <li>&#128218 <a href="#education">Education</a></li>
                     <li>&#128640 <a href="#projects">Projects</a></li>
-                    <li>&#129351 <a href="">Skills</a></li>
-                    <li>&#128237 <a href="">Contact</a></li>
+                    <li>&#129351 <a href="#skills">Skills</a></li>
+                    <li>&#128237 <a href="#contact">Contact</a></li>
                 </ul>
+
+                <p id="about-me">
+                Motivated Computer Science student with robust problem-solving
+                skills who demonstrates a strong work ethic and a liking for
+                algorithmic and web developpment. <span id="additional-info">After discovering full-stack web
+                    development in a new light, I now intend to learn as much as
+                    possible in this field. Seeking to apply my competences via an
+                    internship in computer science, I am willing to contribute to
+                    meaningful projects and will show adaptability in any situation.</span>
+                </p>
+
             </aside>
         </header>
 
-        <p id="about-me">
-            Motivated Computer Science student with robust problem-solving
-            skills who demonstrates a strong work ethic and a liking for
-            algorithmic and web developpment. <span id="additional-info">After discovering full-stack web
-            development in a new light, I now intend to learn as much as
-            possible in this field. Seeking to apply my competences via an
-            internship in computer science, I am willing to contribute to
-            meaningful projects and will show adaptability in any situation.</span>
-        </p>
 
         <main>
 
@@ -107,8 +110,8 @@
                 <article>
                     <h4>&#127919 2021</h4>
 
-                    <div class="github-link">
-                        <a href="https://github.com/AlexisMoins/tsukuba-gdmc-2022">repository</a>
+                    <div class="source-code">
+                        <a href="https://github.com/AlexisMoins/tsukuba-gdmc-2022">source code</a>
                     </div>
 
                     <h4>Internship, Tsukuba University, Japan</h4>
@@ -127,8 +130,8 @@
                 <article>
                     <h4>&#127919 2021</h4>
 
-                    <div class="github-link">
-                        <a href="https://github.com/AlexisMoins/dash-api">repository</a>
+                    <div class="source-code">
+                        <a href="https://github.com/AlexisMoins/dash-api">source code</a>
                     </div>
 
                     <h4>Dash API</h4>
@@ -148,29 +151,32 @@
 
             <h1>SKILLS</h1>
             <section id="skills">
-                <table>
-                    <tr>
-                        <td>Python</td>
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>
-                    <tr>
-                        <td>Java</td>
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>                                                    
-                    <tr>
-                        <td>CSS</td>
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>
-                </table>
+                <article>
+                    <table>
+                        <tr>
+                            <td>PYTHON</td>
+                            <td>⭐️⭐️⭐️⭐️⭐️</td>
+                        </tr>
+                        <tr>
+                            <td>JAVA</td>
+                            <td>⭐️⭐️⭐️⭐️</td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>⭐️⭐️⭐️⭐️⭐️</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>⭐️⭐️⭐️⭐️</td>
+                        </tr>
+                    </table>
+                </article>
             </section>
         </main>
-        <footer>
-            <a id="send-an-email" href="mailto:moinsalexis@gmail.com">&#128237 email</a>
-            <a id="find-me" href="">&#127968 LinkIn</a>
+        <footer id="contact">
+            <button class="with-text"><a href="mailto:moinsalexis@gmail.com">&#128237 Email</a></button>
+            <button class="with-text"><a href="https://www.linkedin.com/in/alexis-moins-170717195/">&#127968 LinkIn</a></button>
+            <button class="with-text"><a href="https://github.com/alexis-moins">&#128230 Github</a></button>
         </footer>
     </body>
 </html>
