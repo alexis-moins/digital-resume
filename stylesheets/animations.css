@@ -1,0 +1,38 @@
+@keyframes image-fade-animation {
+    from {
+        opacity: 0;
+        border: solid 4px var(--green-fade);
+    }
+
+    to {
+        opacity: 1;
+        border: solid 4px var(--green);
+    }
+}
+
+@keyframes header-fade-animation {
+    from {
+        color: var(--black-fade);
+    }
+    to {
+        color: var(--black);
+    }
+}
+
+@keyframes shadow-fade-animation {
+    from {
+        background-color: var(--green-fade);
+    }
+    to {
+        background-color: var(--green);
+    }
+}
+
+@keyframes text-fade-animation {
+    from {
+        color: var(--black-fade);
+    }
+    to {
+        color: var(--black);
+    }
+}

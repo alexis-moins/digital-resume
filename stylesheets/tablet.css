@@ -5,8 +5,7 @@ header {
     justify-content: space-evenly;
 
     width: 90%;
-
-    padding-top: 33px;
+    height: 100vh;
 }
 
 button#page-top {
@@ -17,19 +16,38 @@ button#page-top {
 img#profile-picture {
     width: 25vw;
     height: 25vw;
-
     margin-right: 30px;
+
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: image-fade-animation;
 }
 
 div#name-container h1 {
     margin: auto;
     padding-left: 5px;
+    animation-name: header-fade-animation;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+p#about-me {
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: text-fade-animation;
 }
 
 div#shadow {
     top: 15px;
     width: 212px;
     height: 15px;
+    
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: shadow-fade-animation;
 }
 
 ul#links {
@@ -69,15 +87,12 @@ main {
 
 div#vertical-line {
     width: 20px;
-    height: 95%;
-
+    height: 96%;
     z-index: -1;
     position: absolute;
-
-    top: 90px;
+    top: 70px;
     left: 50%;
     margin-left: -10px;
-
     border-radius: 10px;
     background-color: var(--green);
 }
@@ -91,6 +106,6 @@ div.article-container article {
 }
 
 section > h1:nth-of-type(odd) {
-  width: 100%;
-  max-height: 155px;
+    width: 100%;
+    max-height: 155px;
 }

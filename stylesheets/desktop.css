@@ -21,17 +21,38 @@ img#profile-picture {
 
     margin-left: 30px;
     margin-right: 30px;
+
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: image-fade-animation;
 }
 
 div#name-container h1 {
     margin: auto;
     padding-left: 5px;
+
+    animation-name: header-fade-animation;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+p#about-me {
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: text-fade-animation;
 }
 
 div#shadow {
     top: 15px;
     width: 212px;
     height: 15px;
+
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: shadow-fade-animation;
 }
 
 ul#links {
@@ -63,7 +84,15 @@ ul#links li a {
 }
 
 div#vertical-line {
-    display: none;
+    width: 20px;
+    height: 30.5%;
+    z-index: -1;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin-left: -10px;
+    border-radius: 10px;
+    background-color: var(--green);
 }
 
 div.article-container {
@@ -84,4 +113,18 @@ section#projects {
     width: 100vw;
     height: 100vh;
     background-color: var(--green);
+}
+
+section#skills {
+    height: 100vh;
+}
+
+footer {
+    height: 100vh;
+}
+
+button.with-text {
+    width: 175px;
+    height: 95px;
+    font-size: 25px;
 }

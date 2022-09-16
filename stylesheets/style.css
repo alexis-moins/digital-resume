@@ -1,6 +1,7 @@
+@import "animations.css";
 @import "mobile.css" screen and (max-width: 630px);
-@import "tablet.css" screen and (min-width: 631px) and (max-width: 1024px);
 @import "desktop.css" screen and (min-width: 1025px);
+@import "tablet.css" screen and (min-width: 631px) and (max-width: 1024px);
 
 /* {{{ fonts and variables */
 
@@ -8,9 +9,14 @@
 
 :root {
     --black: #222222;
+    --black-fade: #22222200;
+
     --dark-grey: #545454;
     --grey: #737373;
-    --green: #d3eee1;
+
+    --green: #D3EEE1;
+    --green-fade: #D3EEE100;
+
     --blue: cornflowerblue;
 
     --title-font: "Raleway", sans-serif;
@@ -59,6 +65,8 @@ main {
     margin-top: 15px;
     margin-bottom: 30px;
     padding-bottom: 40px;
+
+    position: relative;
 }
 
 section {
@@ -74,6 +82,7 @@ div.article-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-bottom: 50px;
 }
 
 div.article-container article {
@@ -92,7 +101,7 @@ div.article-container article {
 
 footer {
     width: 100vw;
-    height: 80px;
+    /* height: 80px; */
 
     display: flex;
     align-items: center;
@@ -128,15 +137,13 @@ button {
     justify-content: center;
 
     border-radius: 10px;
-    border: 1px solid var(--green);
-
-    color: var(--black);
     background-color: white;
+    border: 1px solid var(--green);
 }
 
 button.with-text {
-    width: 75px;
-    height: 40px;
+    /* width: 75px; */
+    /* height: 40px; */
     color: var(--black);
 }
 
@@ -163,9 +170,9 @@ ul#links li a {
     border-bottom: solid 4px var(--green);
 }
 
-section#skills {
-    height: 100vh;
-}
+/* section#skills { */
+/*     height: 100vh; */
+/* } */
 
 section#skills table {
     display: flex;
