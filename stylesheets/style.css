@@ -39,7 +39,11 @@ body {
 
 h1,
 h4 {
+    font-size: 12px;
     font-family: var(--title-font);
+}
+h1 {
+    font-size: 28px;
 }
 
 a {
@@ -73,7 +77,7 @@ div.article-container {
 }
 
 div.article-container article {
-    padding: 5%;
+    padding: min(5%, 50px);
     position: relative;
 
     max-width: 525px;
@@ -159,6 +163,10 @@ ul#links li a {
     border-bottom: solid 4px var(--green);
 }
 
+section#skills {
+    height: 100vh;
+}
+
 section#skills table {
     display: flex;
     align-items: center;
@@ -188,6 +196,8 @@ div.source-code a {
 
 section#skills article {
     max-width: 310px;
+    max-height: 158px;
+    padding: min(5%, 25px);
 }
 
 /* }}} */

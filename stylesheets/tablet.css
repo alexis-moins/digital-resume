@@ -27,8 +27,8 @@ div#name-container h1 {
 }
 
 div#shadow {
-    top: 10px;
-    width: 142px;
+    top: 15px;
+    width: 212px;
     height: 15px;
 }
 
@@ -56,6 +56,10 @@ ul#links li a {
     border-bottom: solid 4px var(--green);
 }
 
+ul#links li:nth-of-type(1) {
+    display: none;
+}
+
 span#additional-info {
     display: none;
 }
@@ -70,7 +74,7 @@ div#vertical-line {
     z-index: -1;
     position: absolute;
 
-    top: 50px;
+    top: 90px;
     left: 50%;
     margin-left: -10px;
 

@@ -8,6 +8,10 @@ header {
     width: 100%;
 }
 
+ul#links li:nth-of-type(1) {
+    display: none;
+}
+
 button#page-top {
     top: 4vh;
     right: 4vw;
@@ -29,12 +33,9 @@ aside#menu {
     align-items: center;
     flex-direction: column;
     width: 100%;
-
-    color: var(--dark-grey);
 }
 
 aside#menu h1 {
-    font-size: 28px;
     text-align: center;
 }
 
@@ -57,7 +58,7 @@ ul#links li {
     margin: 0 1% 0 1%;
 }
 
-ul#links li:nth-child(even) {
+ul#links li:nth-child(odd) {
     justify-content: flex-end;
 }
 
@@ -89,7 +90,7 @@ div#vertical-line {
     z-index: -1;
     position: absolute;
 
-    top: 50px;
+    top: 90px;
     left: 50%;
     margin-left: -10px;
 
