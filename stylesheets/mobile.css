@@ -1,3 +1,7 @@
+body {
+    font-size: 12px;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -99,5 +103,9 @@ div#vertical-line {
 }
 
 section > h1 {
-  width: 100%;
+    width: 100%;
+}
+
+footer {
+    flex-direction: column;
 }

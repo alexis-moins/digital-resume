@@ -1,3 +1,7 @@
+body {
+    font-size: 14px;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -72,7 +76,7 @@ ul#links {
 
     z-index: 3;
     background-color: white;
-    border-bottom: solid 1px lightgrey;
+    border-bottom: solid 1px var(--light-grey);
 }
 
 ul#links li {
@@ -83,12 +87,20 @@ ul#links li a {
     border-bottom: solid 4px var(--green);
 }
 
+ul#links li a:hover {
+    border-bottom: solid 4px var(--light-grey);
+}
+
+#education {
+    height: 100vh;
+}
+
 div#vertical-line {
     width: 20px;
-    height: 30.5%;
+    height: 28%;
     z-index: -1;
     position: absolute;
-    top: 70px;
+    top: 90px;
     left: 50%;
     margin-left: -10px;
     border-radius: 10px;
@@ -100,9 +112,17 @@ div.article-container {
     flex-direction: row;
 }
 
-div.article-container > article {
+div.article-container article {
     width: 30%;
     height: 225px;
+
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+section#skills article {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 main > h1 {
@@ -127,4 +147,19 @@ button.with-text {
     width: 175px;
     height: 95px;
     font-size: 25px;
+
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: button-hover-out-animation;
+}
+
+button.with-text:hover {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: button-hover-in-animation;
+}
+
+div.source-code:hover {
+    border: 2px solid var(--dark-brown);
+    color: var(--dark-brown);
 }

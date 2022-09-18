@@ -1,10 +1,10 @@
-@import "animations.css";
 @import "mobile.css" screen and (max-width: 630px);
 @import "desktop.css" screen and (min-width: 1025px);
 @import "tablet.css" screen and (min-width: 631px) and (max-width: 1024px);
 
-/* {{{ fonts and variables */
+@import "animations.css";
 
+/* Colours and fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Raleway&display=swap");
 
 :root {
@@ -13,29 +13,30 @@
 
     --dark-grey: #545454;
     --grey: #737373;
+    --light-grey: lightgrey;
 
-    --green: #D3EEE1;
-    --green-fade: #D3EEE100;
+    --green: #d3eee1;
+    --green-fade: #d3eee100;
 
     --blue: cornflowerblue;
+
+    --brown: rosybrown;
+    --dark-brown: #856363;
 
     --title-font: "Raleway", sans-serif;
     --text-font: "Lora", serif;
 }
 
-/* }}} */
-
-/* {{{ global behaviour */
-
+/* Global behaviour */
 html {
     scroll-behavior: smooth;
 }
 
 body {
     color: var(--black);
-    margin: 4vh 4vw 4vh 4vw;
+    margin: 4vh 4vw 0 4vw;
 
-    font-size: 12px;
+    /* font-size: 14px; */
     font-family: var(--text-font);
 
     display: flex;
@@ -45,11 +46,15 @@ body {
 
 h1,
 h4 {
-    font-size: 12px;
     font-family: var(--title-font);
 }
+
 h1 {
     font-size: 28px;
+}
+
+h4 {
+    font-size: 16px;
 }
 
 a {
@@ -57,7 +62,8 @@ a {
     text-decoration: none;
 }
 
-nav ul, #links {
+nav ul,
+#links {
     list-style: none;
 }
 
@@ -79,18 +85,20 @@ section {
 
 div.article-container {
     width: 100%;
+    padding-bottom: 50px;
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-bottom: 50px;
 }
 
 div.article-container article {
-    padding: min(5%, 50px);
     position: relative;
+    padding: min(5%, 50px);
 
     max-width: 525px;
-    margin: 4vh 0 4vh 0;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 
     border-radius: 10px;
     background-color: white;
@@ -101,7 +109,7 @@ div.article-container article {
 
 footer {
     width: 100vw;
-    /* height: 80px; */
+    height: 100vh;
 
     display: flex;
     align-items: center;
@@ -110,14 +118,9 @@ footer {
     background-color: var(--green);
 }
 
-/* }}} */
-
-/* {{{ custom elements */
-
 p {
     text-align: justify;
 }
-
 
 div#name-container {
     position: relative;
@@ -130,7 +133,6 @@ div#shadow {
     background-color: var(--green);
 }
 
-
 button {
     display: flex;
     align-items: center;
@@ -142,8 +144,10 @@ button {
 }
 
 button.with-text {
-    /* width: 75px; */
-    /* height: 40px; */
+    width: 175px;
+    height: 95px;
+
+    font-size: 25px;
     color: var(--black);
 }
 
@@ -170,10 +174,6 @@ ul#links li a {
     border-bottom: solid 4px var(--green);
 }
 
-/* section#skills { */
-/*     height: 100vh; */
-/* } */
-
 section#skills table {
     display: flex;
     align-items: center;
@@ -191,14 +191,11 @@ div.source-code {
     right: 5px;
 
     border-radius: 6px;
-    border: 2px solid var(--blue);
+    border: 2px solid var(--brown);
+
     padding: 2px 4px 2px 4px;
     margin-right: 5px;
-}
-
-div.source-code a {
-    text-decoration: none;
-    color: var(--blue);
+    color: var(--brown);
 }
 
 section#skills article {
@@ -206,5 +203,3 @@ section#skills article {
     max-height: 158px;
     padding: min(5%, 25px);
 }
-
-/* }}} */

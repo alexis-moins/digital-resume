@@ -36,3 +36,22 @@
         color: var(--black);
     }
 }
+
+@keyframes button-hover-in-animation {
+    from {
+        box-shadow: none;
+    }
+    to {
+        box-shadow: 4px 4px var(--dark-grey);
+    }
+}
+
+@keyframes button-hover-out-animation {
+    from {
+        box-shadow: 4px 4px var(--dark-grey);
+    }
+    to {
+        box-shadow: none;
+    }
+}
+
